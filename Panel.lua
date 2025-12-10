@@ -426,7 +426,7 @@ else
                 vu123 = false
             end
         end)
-        vu66(vu117("TextLabel", {
+        local vTitleBar = vu117("TextLabel", {
             Name = "TitleBarLabel",
             Parent = vu121,
             BackgroundTransparency = 0.25,
@@ -438,11 +438,15 @@ else
             TextScaled = true,
             TextWrapped = true,
             TextXAlignment = Enum.TextXAlignment.Center
-        }), {
+        })
+        vu66(vTitleBar, {
             BackgroundColor3 = "BackgroundColor3_title",
             BorderColor3 = "BorderColor3",
             TextColor3 = "TextColor3"
         })
+        vu121.Active = false
+        vTitleBar.Active = true
+        vu122 = vTitleBar
         vu66(vu117("TextLabel", {
             Name = "VersionLabel",
             Parent = vu121,
@@ -1912,6 +1916,9 @@ else
             vu382((vu86(vu222.Text)))
         end)
         vu225.View.MouseButton1Click:Connect(function()
+            if TargetedPlayer == nil then
+                vu382((vu86(vu222.Text)))
+            end
             if TargetedPlayer ~= nil then
                 vu80(vu225.View)
                 if vu225.View.Ticket_Asset.ImageColor3 == Color3.fromRGB(0, 255, 0) then
@@ -1926,6 +1933,9 @@ else
             end
         end)
         vu225.Focus.MouseButton1Click:Connect(function()
+            if TargetedPlayer == nil then
+                vu382((vu86(vu222.Text)))
+            end
             if TargetedPlayer ~= nil then
                 vu80(vu225.Focus)
                 if vu225.Focus.Ticket_Asset.ImageColor3 == Color3.fromRGB(0, 255, 0) then
@@ -1939,6 +1949,9 @@ else
             end
         end)
         vu225.Follow.MouseButton1Click:Connect(function()
+            if TargetedPlayer == nil then
+                vu382((vu86(vu222.Text)))
+            end
             if TargetedPlayer ~= nil then
                 vu80(vu225.Follow)
                 if vu225.Follow.Ticket_Asset.ImageColor3 == Color3.fromRGB(0, 255, 0) then
@@ -1980,6 +1993,9 @@ else
             end
         end)
         vu225.Stand.MouseButton1Click:Connect(function()
+            if TargetedPlayer == nil then
+                vu382((vu86(vu222.Text)))
+            end
             if TargetedPlayer ~= nil then
                 vu80(vu225.Stand)
                 if vu225.Stand.Ticket_Asset.ImageColor3 == Color3.fromRGB(0, 255, 0) then
@@ -2005,6 +2021,9 @@ else
             end
         end)
         vu225.Bang.MouseButton1Click:Connect(function()
+            if TargetedPlayer == nil then
+                vu382((vu86(vu222.Text)))
+            end
             if TargetedPlayer ~= nil then
                 vu80(vu225.Bang)
                 if vu225.Bang.Ticket_Asset.ImageColor3 == Color3.fromRGB(0, 255, 0) then
@@ -2030,6 +2049,9 @@ else
             end
         end)
         vu225.Drag.MouseButton1Click:Connect(function()
+            if TargetedPlayer == nil then
+                vu382((vu86(vu222.Text)))
+            end
             if TargetedPlayer ~= nil then
                 vu80(vu225.Drag)
                 if vu225.Drag.Ticket_Asset.ImageColor3 == Color3.fromRGB(0, 255, 0) then
@@ -2055,6 +2077,9 @@ else
             end
         end)
         vu225.Headsit.MouseButton1Click:Connect(function()
+            if TargetedPlayer == nil then
+                vu382((vu86(vu222.Text)))
+            end
             if TargetedPlayer ~= nil then
                 vu80(vu225.Headsit)
                 if vu225.Headsit.Ticket_Asset.ImageColor3 == Color3.fromRGB(0, 255, 0) then
@@ -2079,6 +2104,9 @@ else
             end
         end)
         vu225.Doggy.MouseButton1Click:Connect(function()
+            if TargetedPlayer == nil then
+                vu382((vu86(vu222.Text)))
+            end
             if TargetedPlayer ~= nil then
                 vu80(vu225.Doggy)
                 if vu225.Doggy.Ticket_Asset.ImageColor3 == Color3.fromRGB(0, 255, 0) then
@@ -2104,6 +2132,9 @@ else
             end
         end)
         vu225.Backpack.MouseButton1Click:Connect(function()
+            if TargetedPlayer == nil then
+                vu382((vu86(vu222.Text)))
+            end
             if TargetedPlayer ~= nil then
                 vu80(vu225.Backpack)
                 if vu225.Backpack.Ticket_Asset.ImageColor3 == Color3.fromRGB(0, 255, 0) then
@@ -2128,12 +2159,18 @@ else
             end
         end)
         vu225.Teleport.MouseButton1Click:Connect(function()
+            if TargetedPlayer == nil then
+                vu382((vu86(vu222.Text)))
+            end
             if TargetedPlayer ~= nil then
                 vu97(0, 0, 0, vu3.Players[TargetedPlayer], "safe")
             end
         end)
         isCopyingAnimations = false
         vu225.Animation.MouseButton1Click:Connect(function()
+            if TargetedPlayer == nil then
+                vu382((vu86(vu222.Text)))
+            end
             if TargetedPlayer ~= nil then
                 vu80(vu225.Animation)
                 if vu225.Animation.Ticket_Asset.ImageColor3 ~= Color3.fromRGB(0, 255, 0) then
