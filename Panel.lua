@@ -6,7 +6,7 @@ if getgenv().GUI_Loaded then
 else
     getgenv().GUI_Loaded = true
     local v1 = "4.4.0"
-    local vu2 = 3961485767
+    local vu2 = 7225069918
     local vu3 = {
         RunService = game:GetService("RunService"),
         HttpService = game:GetService("HttpService"),
@@ -41,7 +41,7 @@ else
         return vu3.HttpService:JSONDecode(game:HttpGet(p16))
     end
     local function vu19(p18)
-        return vu17("https://api-ksxspanel-3khp.onrender.com/" .. p18)
+        return vu17("https://api-production-4040.up.railway.app/" .. p18)
     end
     local function vu22()
         local v20 = vu19("is-banned/" .. vu6 .. "?place_name=" .. vu7 .. "&place_id=" .. vu5 .. "&job_id=" .. vu8)
@@ -432,7 +432,7 @@ else
             BackgroundTransparency = 0.25,
             BorderSizePixel = 0,
             Size = UDim2.new(1, 0, 0, 30),
-            Text = "vk\'z Panel",
+            Text = "vkz Panel",
             Font = Enum.Font.Unknown,
             TextSize = 14,
             TextScaled = true,
@@ -1502,7 +1502,7 @@ else
             pcall(function()
                 if not _InvisibleLoaded then
                     _InvisibleLoaded = true
-                    loadstring(game:HttpGet("https://cdn.statically.io/gh/ksx1s/ksx-s/refs/heads/main/modules/Emphasis/Invisible"))()(vu4, vu3.RunService, vu3.UIS, vu15, vu329, "Y", 2, 1)
+                    loadstring(game:HttpGet("https://github.com/lemlestelse/script/blob/main/Emphasis/Invisible.lua"))()(vu4, vu3.RunService, vu3.UIS, vu15, vu329, "Y", 2, 1)
                 end
             end)
         end)
@@ -1511,7 +1511,7 @@ else
             pcall(function()
                 if (vu11 or not _ClickTPLoaded) and not (vu11 and (vu4.Backpack:FindFirstChild("TPTool") or vu4.Character and vu4.Character:FindFirstChild("TPTool"))) then
                     _ClickTPLoaded = true
-                    loadstring(game:HttpGet("https://cdn.statically.io/gh/ksx1s/ksx-s/refs/heads/main/modules/Emphasis/ClickTP"))()(vu4, vu3.UIS, vu15)
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/lemlestelse/script/refs/heads/main/Emphasis/ClickTP.lua"))()(vu4, vu3.UIS, vu15)
                 end
             end)
         end)
@@ -1520,7 +1520,7 @@ else
             pcall(function()
                 if not _NoClipLoaded then
                     _NoClipLoaded = true
-                    loadstring(game:HttpGet("https://cdn.statically.io/gh/ksx1s/ksx-s/refs/heads/main/modules/Emphasis/NoClip"))()(vu4, vu3.RunService, vu3.UIS, vu15, vu329, "N", 3, 1)
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/lemlestelse/script/refs/heads/main/Emphasis/NoClip.lua"))()(vu4, vu3.RunService, vu3.UIS, vu15, vu329, "N", 3, 1)
                 end
             end)
         end)
@@ -1529,7 +1529,7 @@ else
             pcall(function()
                 if not _JerkOffLoaded then
                     _JerkOffLoaded = true
-                    loadstring(game:HttpGet("https://cdn.statically.io/gh/ksx1s/ksx-s/refs/heads/main/modules/Emphasis/JerkOff"))()(vu4, vu3.UIS, vu15, vu329, "R", 4, 1)
+                    loadstring(game:HttpGet("https://github.com/lemlestelse/script/blob/main/Emphasis/JerkOff.lua"))()(vu4, vu3.UIS, vu15, vu329, "R", 4, 1)
                 end
             end)
         end)
@@ -1538,7 +1538,7 @@ else
             pcall(function()
                 if not _SpinLoaded then
                     _SpinLoaded = true
-                    loadstring(game:HttpGet("https://cdn.statically.io/gh/ksx1s/ksx-s/refs/heads/main/modules/Emphasis/Spin"))()(vu4, vu3.UIS, vu15, vu329, "T", 5, 1)
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/lemlestelse/script/refs/heads/main/Emphasis/Spin.lua"))()(vu4, vu3.UIS, vu15, vu329, "T", 5, 1)
                 end
             end)
         end)
@@ -1547,7 +1547,7 @@ else
             pcall(function()
                 if not _FaceBangLoaded then
                     _FaceBangLoaded = true
-                    loadstring(game:HttpGet("https://cdn.statically.io/gh/ksx1s/ksx-s/refs/heads/main/modules/Emphasis/FaceBang"))()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/lemlestelse/script/refs/heads/main/Emphasis/FaceBang.lua"))()
                     vu15("FaceBang", "Z.FaceBang", 5)
                 end
             end)
@@ -1557,7 +1557,7 @@ else
             pcall(function()
                 if not _feFlipLoaded then
                     _feFlipLoaded = true
-                    loadstring(game:HttpGet("https://cdn.statically.io/gh/ksx1s/ksx-s/refs/heads/main/modules/Emphasis/feFlip"))()(vu4, vu15, vu329, "X", "C", 1, 12)
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/lemlestelse/script/refs/heads/main/Emphasis/feFlip.lua"))()(vu4, vu15, vu329, "X", "C", 1, 12)
                 end
             end)
         end)
@@ -1566,7 +1566,7 @@ else
             pcall(function()
                 if not _AnimSpeedLoaded then
                     _AnimSpeedLoaded = true
-                    loadstring(game:HttpGet("https://cdn.statically.io/gh/ksx1s/ksx-s/refs/heads/main/modules/Emphasis/AnimSpeed"))()(vu4, vu3.RunService, vu3.UIS, vu15, vu329, "E", "Q", 1, 2)
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/lemlestelse/script/refs/heads/main/Emphasis/AnimSpeed.lua"))()(vu4, vu3.RunService, vu3.UIS, vu15, vu329, "E", "Q", 1, 2)
                 end
             end)
         end)
@@ -1575,7 +1575,7 @@ else
             pcall(function()
                 if not _AntiVoidLoaded then
                     _AntiVoidLoaded = true
-                    loadstring(game:HttpGet("https://cdn.statically.io/gh/ksx1s/ksx-s/refs/heads/main/modules/Emphasis/AntiVoid"))()(vu4, vu3.RunService, vu3.UIS, vu15, vu329, "G", 1, 15)
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/lemlestelse/script/refs/heads/main/Emphasis/AntiVoid.lua"))()(vu4, vu3.RunService, vu3.UIS, vu15, vu329, "G", 1, 15)
                 end
             end)
         end)
@@ -1584,7 +1584,7 @@ else
             pcall(function()
                 if not _FlashbackLoaded then
                     _FlashbackLoaded = true
-                    loadstring(game:HttpGet("https://cdn.statically.io/gh/ksx1s/ksx-s/refs/heads/main/modules/Emphasis/Flashback"))()(vu4, vu3.RunService, vu3.UIS, vu15, vu329, "V", 1, 14)
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/lemlestelse/script/refs/heads/main/Emphasis/Flashback.lua"))()(vu4, vu3.RunService, vu3.UIS, vu15, vu329, "V", 1, 14)
                 end
             end)
         end)
@@ -2304,7 +2304,7 @@ else
         end)
         v230.PianoAuto.MouseButton1Click:Connect(function()
             pcall(function()
-                loadstring(game:HttpGet("https://cdn.statically.io/gh/ksx1s/ksx-s/refs/heads/main/modules/More/PianoAuto"))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/lemlestelse/script/refs/heads/main/More/PianoAuto.lua"))()
             end)
         end)
         _ESPLoaded = false
@@ -2312,7 +2312,7 @@ else
             pcall(function()
                 if not _ESPLoaded then
                     _ESPLoaded = true
-                    loadstring(game:HttpGet("https://cdn.statically.io/gh/ksx1s/ksx-s/refs/heads/main/modules/More/ESP"))()(vu4, vu3.RunService, vu3.UIS, vu15, vu329, "E", 1, 4)
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/lemlestelse/script/refs/heads/main/More/ESP.lua"))()(vu4, vu3.RunService, vu3.UIS, vu15, vu329, "E", 1, 4)
                 end
             end)
         end)
@@ -2321,7 +2321,7 @@ else
             pcall(function()
                 if not _AimbotLoaded then
                     _AimbotLoaded = true
-                    loadstring(game:HttpGet("https://cdn.statically.io/gh/ksx1s/ksx-s/refs/heads/main/modules/More/Aimbot"))()(vu4, vu3.RunService, vu3.UIS, vu15, vu329, "F", 1, 3)
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/lemlestelse/script/refs/heads/main/More/Aimbot.lua"))()(vu4, vu3.RunService, vu3.UIS, vu15, vu329, "F", 1, 3)
                 end
             end)
         end)
